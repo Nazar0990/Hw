@@ -5,8 +5,8 @@ let figure = {
 
 
 function showFigure(figure) {
-  console.log("Ліва верхня: (" + figure.leftTop.x + ", " + figure.leftTop.y + ")");
-  console.log("Права нижня: (" + figure.rightBottom.x + ", " + figure.rightBottom.y + ")");
+  console.log (" + figure.leftTop.x + ", " + figure.leftTop.y + ")");
+  console.log (" + figure.rightBottom.x + ", " + figure.rightBottom.y + ")");
 }
 
 
@@ -71,10 +71,10 @@ function isInside(figure, x, y) {
 
 
 showFigure(figure);
-console.log("Ширина:", getWidth(figure));
-console.log("Висота:", getHeight(figure));
-console.log("Площа:", getArea(figure));
-console.log("Периметр:", getPerimeter(figure));
+console.log( getWidth(figure));
+console.log( getHeight(figure));
+console.log( getArea(figure));
+console.log( getPerimeter(figure));
 
 changeWidth(figure, 5);
 changeHeight(figure, 3);
