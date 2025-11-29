@@ -1,113 +1,12 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Макет сітки</title>
-  <style>
-    body {
-      background: #23272c;
-      margin: 0;
-      padding: 0;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr 3fr 2fr;
-      grid-template-rows: repeat(4, 1fr);
-      gap: 12px;
-      width: 900px;
-      height: 550px;
-      padding: 18px;
-      background: #18191b;
-      border-radius: 16px;
-    }
-    .item {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 2rem;
-      font-family: sans-serif;
-      font-weight: 600;
-      position: relative;
-      border-radius: 16px;
-      background: linear-gradient(120deg, #ffc195 0%, #ff72da 50%, #b5ffff 100%);
-      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-    }
-    .diamond {
-      width: 38px;
-      height: 38px;
-      background: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.1em;
-      color: #7d53fc;
-      font-weight: bold;
-      border-radius: 7px;
-      transform: rotate(45deg);
-      box-shadow: 0 1px 5px rgba(0,0,0,0.07);
-    }
-    .diamond span {
-      display: block;
-      transform: rotate(-45deg);
-    }
-
-    /* Розташування елементів як на макеті */
-    .item1 { grid-column: 2 / 3; grid-row: 1 / 3; }
-    .item2 { grid-column: 2 / 3; grid-row: 3 / 5; }
-    .item3 { grid-column: 3 / 4; grid-row: 1 / 2; }
-    .item4 { grid-column: 3 / 4; grid-row: 2 / 3; }
-    .item5 { grid-column: 1 / 2; grid-row: 1 / 2; }
-    .item6 { grid-column: 1 / 2; grid-row: 2 / 3; }
-    .item7 { grid-column: 1 / 2; grid-row: 3 / 4; }
-    .item8 { grid-column: 1 / 2; grid-row: 4 / 5; }
-    .item9  { grid-column: 2 / 3; grid-row: 3 / 4; justify-content: flex-end; align-items: flex-end; width: 68%; height: 48%; position: absolute; top: 72%; left: 1%; }
-    .item10 { grid-column: 2 / 3; grid-row: 4 / 5; justify-content: flex-end; align-items: flex-end; width: 68%; height: 48%; position: absolute; top: 85%; left: 1%; }
-    .item11 { grid-column: 3 / 4; grid-row: 3 / 4; }
-    .item12 { grid-column: 3 / 4; grid-row: 3 / 4; justify-content: flex-end; }
-    .item13 { grid-column: 3 / 4; grid-row: 4 / 5; }
-    .item14 { grid-column: 3 / 4; grid-row: 4 / 5; justify-content: flex-end; }
-    /* Точна позиціонування 9-14 через absolute зверху (для більшої схожості з макетом)*/
-    .item9, .item10, .item12, .item14 { background: none; box-shadow: none; }
-    .item11 { margin-right: 6px; }
-    .item13 { margin-right: 6px; }
-
-    /* Квадрати для 9-14 */
-    .item9, .item10, .item12, .item14 {
-      width: 94px;
-      height: 94px;
-      background: linear-gradient(120deg, #ffc195 0%, #ff72da 60%, #b5ffff 100%);
-      position: static;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-    }
-    /* Для малих елементів справа */
-    .item11, .item12, .item13, .item14 {
-      width: 94px;
-      height: 94px;
-    }
-  </style>
+  <title>DZ</title>
 </head>
 <body>
-  <div class="grid">
-    <div class="item item5"><div class="diamond"><span>5</span></div></div>
-    <div class="item item6"><div class="diamond"><span>6</span></div></div>
-    <div class="item item7"><div class="diamond"><span>7</span></div></div>
-    <div class="item item8"><div class="diamond"><span>8</span></div></div>
 
-    <div class="item item1"><div class="diamond"><span>1</span></div></div>
-    <div class="item item2"><div class="diamond"><span>2</span></div></div>
-    <div class="item item3"><div class="diamond"><span>3</span></div></div>
-    <div class="item item4"><div class="diamond"><span>4</span></div></div>
+<script src="QQ.js"></script>
 
-    <div class="item item9"><div class="diamond"><span>9</span></div></div>
-    <div class="item item10"><div class="diamond"><span>10</span></div></div>
-    <div class="item item11"><div class="diamond"><span>11</span></div></div>
-    <div class="item item12"><div class="diamond"><span>12</span></div></div>
-    <div class="item item13"><div class="diamond"><span>13</span></div></div>
-    <div class="item item14"><div class="diamond"><span>14</span></div></div>
-  </div>
 </body>
 </html>
