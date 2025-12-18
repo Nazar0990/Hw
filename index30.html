@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Products</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+        }
+
+        .buttons {
+            margin-bottom: 20px;
+        }
+
+        .buttons button {
+            margin: 0 5px;
+            padding: 8px 16px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .product {
+            width: 160px;
+            border: 1px solid #ccc;
+            border-radius: 12px;
+            padding: 15px;
+            box-shadow: 0 0 7px rgba(0,0,0,0.3);
+            background: white;
+        }
+
+        .product img {
+            width: 120px;
+            height: 120px;
+        }
+
+        .product span {
+            display: block;
+            margin-top: 12px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>What do I have in my fridge?</h2>
+
+<div class="buttons">
+    <button id="addFish">Add Fish</button>
+    <button id="addApple">Add Apple</button>
+    <button id="addEggs">Add Eggs</button>
+</div>
+
+<div class="container" id="productsContainer">
+    <div class="product">
+        <img src="pepper.png" alt="Pepper">
+        <span>Pepper</span>
+    </div>
+
+    <div class="product">
+        <img src="apple.png" alt="Apple">
+        <span>Apple</span>
+    </div>
+
+    <div class="product">
+        <img src="cheese.png" alt="Cheese">
+        <span>Cheese</span>
+    </div>
+
+    <div class="product">
+        <img src="corn.png" alt="Corn">
+        <span>Corn</span>
+    </div>
+
+    <div class="product">
+        <img src="mushroom.png" alt="Mushroom">
+        <span>Mushroom</span>
+    </div>
+
+    <div class="product">
+        <img src="garlic.png" alt="Garlic">
+        <span>Garlic</span>
+    </div>
+
+    <div class="product">
+        <img src="beef.png" alt="Beef">
+        <span>Beef</span>
+    </div>
+
+    <div class="product">
+        <img src="fish.png" alt="Fish">
+        <span>Fish</span>
+    </div>
+
+    <div class="product">
+        <img src="eggs.png" alt="Eggs">
+        <span>Eggs</span>
+    </div>
+
+    <div class="product">
+        <img src="coriander.png" alt="Coriander">
+        <span>Coriander</span>
+    </div>
+</div>
+
+<script>
+    const container = document.getElementById('productsContainer');
+
+    function addProduct(image, name) {
+        const product = document.createElement('div');
+        product.className = 'product';
+
+        const img = document.createElement('img');
+        img.src = image;
+        img.alt = name;
+
+        const span = document.createElement('span');
+        span.textContent = name;
+
+        product.appendChild(img);
+        product.appendChild(span);
+
+        container.appendChild(product);
+    }
+
+    document.getElementById('addFish').addEventListener('click', () => {
+        addProduct('fish.png', 'Fish');
+    });
+
+    document.getElementById('addApple').addEventListener('click', () => {
+        addProduct('apple.png', 'Apple');
+    });
+
+    document.getElementById('addEggs').addEventListener('click', () => {
+        addProduct('eggs.png', 'Eggs');
+    });
+</script>
+
+</body>
+</html>
